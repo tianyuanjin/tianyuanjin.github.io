@@ -1,172 +1,456 @@
-
-
+<!doctype html>
 <html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js" async></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="R2KvOZe2tgfd9NyfAe5nj2fbriSgOrOyrgF-xgf78Gw" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Tianyuan Jin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tianyuan Jin</title>
+  <meta name="description" content="Academic homepage of Tianyuan Jin, Research Fellow at the National University of Singapore.">
+  <style>
+    :root {
+      --text: #222;
+      --muted: #5f6368;
+      --link: #0645ad;
+      --border: #ddd;
+      --light: #f7f7f7;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 1.52;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 22px 22px 64px;
+    }
+
+    nav {
+      margin: 2px 0 26px;
+      padding: 0 0 10px;
+      border-bottom: 1px solid var(--border);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+    }
+
+    nav a {
+      margin-right: 24px;
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      line-height: 1.15;
+      font-weight: 600;
+    }
+
+    h2 {
+      margin: 30px 0 12px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border);
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 600;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .headshot {
+      float: right;
+      width: 215px;
+      max-width: 38%;
+      margin: 2px 0 18px 30px;
+      border-radius: 2px;
+    }
+
+    .position {
+      margin-bottom: 14px;
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .quicklinks {
+      margin: 10px 0 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+    }
+
+    .quicklinks a {
+      margin-right: 10px;
+    }
+
+    .note,
+    .venue,
+    .authors,
+    footer {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0 0 12px 22px;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 7px;
+    }
+
+    .papers li {
+      margin-bottom: 13px;
+    }
+
+    .paper-title {
+      font-weight: 600;
+    }
+
+    .authors,
+    .venue {
+      display: block;
+      margin-top: 1px;
+    }
+
+    .tag {
+      color: #555;
+      white-space: nowrap;
+    }
+
+    .small {
+      font-size: 14px;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 18px 16px 48px;
+      }
+
+      nav a {
+        margin-right: 14px;
+        display: inline-block;
+        margin-bottom: 6px;
+      }
+
+      .headshot {
+        float: none;
+        display: block;
+        width: 210px;
+        max-width: 78%;
+        margin: 0 0 18px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 16mm;
+      }
+
+      body {
+        font-size: 11.5pt;
+        line-height: 1.42;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      nav {
+        font-size: 10.5pt;
+      }
+
+      h1 {
+        font-size: 25pt;
+      }
+
+      h2 {
+        font-size: 16pt;
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      h3,
+      li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .headshot {
+        width: 160px;
+      }
+    }
+  </style>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Home</div>
-<div class="menu-item"><a href="index.html" class="current">About&nbsp;me</a></div>
-<div class="menu-category">Research</div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Tianyuan Jin</h1>
-</div>
-<table class="imgtable"><tr><td>
-<img src="tianyuan_photo.jpg" alt="tianyuan_photo.jpg" width="200px" height="255px" />&nbsp;</td>
-<td align="left"><p>
-Research Fellow<br />
-<a href="https://www.comp.nus.edu.sg/">Department of Electrical and Computer Engineering</a><br />
-<a href="https://www.nus.edu.sg/">National University of Singapore</a><br />
-<br />
-</p>
-</td></tr></table>
-  <h2>Bio</h2>
-<p>  I am a Research Fellow at the Department of Electrical and Computer Engineering, National University of Singapore, working with  <a href="https://www.comp.nus.edu.sg/~scarlett/">Prof. Jonathan Scarlett</a> and <a href="https://vyftan.github.io/">Prof. Vincent Y. F. Tan</a>.  <br/>  I obtained my Ph.D. (2024) in computer science from the National University of Singapore, advised by <a href="https://www.comp.nus.edu.sg/~xiaoxk/">Prof. Xiaokui Xiao</a>. Before that, I obtained my   
-master's degree <br/>  in computer science at <a href="http://en.ustc.edu.cn/">University of Science and Technology of China</a> and my bachelor's degree in mathematics  at <a hred="http://en.ustc.edu.cn/">University of Science and Technology of China</a>.  
+  <main class="page">
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards</a>
+      <a href="Tianyuan_Jin_CV.pdf">CV</a>
+    </nav>
 
-<h2>Contact</h2>
-<p>Email: tianyuan@nus.edu.sg</p>
-<h2>Recent Preprints</h2>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2409.18909">Best Arm Identification with Minimal Regret</a><br />
-Junwen Yang, Vincent Y. F. Tan, <b>Tianyuan Jin</b>. </p>
-</li>
-</ul>  
-<h2>Selected Papers</h2> <p>* stands for the equal contribution and \(+\) stands for the alphabetic author order.  </p>
- <ul>
-  <li>
-    <p>
-Breaking the Total Variance Barrier: Sharp Sample Complexity for Linear Heteroscedastic Bandits with Fixed Action Set<br />
- <b>Heyang Zhao<sup>*</sup>, Tianyuan Jin<sup>*</sup></b>, Weixin Wang, Vincent Y. F. Tan, Pan Xu, Quanquan Gu<br />
-  Proceedings of the 14th International Conference on Learning Representations (ICLR 2026).  [<a href="https://openreview.net/forum?id=IkPJocP3ju">Paper</a>]
-        </p>
-  </li>
-</ul>
-  <ul>
-  <li>
-    <p>
-      Breaking the \( \log(1/\Delta_2) \) Barrier: Better Batched Best Arm Identification with Adaptive Grids<br />
-      <b>Tianyuan Jin<sup>+</sup></b>, Qin Zhang<sup>+</sup>, Dongruo Zhou<sup>+</sup> <br />
-      Proceedings of the 13th International Conference on Learning Representations (ICLR 2025).  [<a href="https://openreview.net/forum?id=buxFBI6GG4">Paper</a>]
-    </p>
-  </li>
-</ul>
-  <ul>
-<li><p>Sparsity-Agnostic Linear Bandits with Adaptive Adversaries</a><br />
-<b>Tianyuan Jin</b>, Kyoungseok Jang, Nicolò Cesa-Bianchi <br />
-Proceedings of the 38th Conference on Advances in Neural Information Processing Systems (NeurIPS 2024). [<a href="https://arxiv.org/abs/2406.01192">Paper</a>] </p>
-</li>
-</ul> 
-<ul>
-<li><p>Optimal Batched Best Arm Identification</a><br />
-<b>Tianyuan Jin</b>, Yu Yang, Jing Tang, Xiaokui Xiao, Pan Xu <br />
-Proceedings of the 38th Conference on Advances in Neural Information Processing Systems (NeurIPS 2024).  [<a href="https://arxiv.org/pdf/2310.14129">Paper</a>] </p>
-</li>
-</ul>
-<ul>
-<li><p>Optimal Batched Linear Bandits</a><br />
-Xuanfei Ren, <b>Tianyuan Jin</b>, Pan Xu <br />
-Proceedings of the International Conference on Machine Learning (ICML 2024).  [<a href="https://arxiv.org/abs/2406.04137">Paper</a>] </p>
-</li>
-</ul>  
-<ul>
-<li><p>Finite-Time Frequentist Regret Bounds of Multi-Agent Thompson Sampling on Sparse Hypergraphs</a><br />
-<b>Tianyuan Jin</b>, Hao-Lun Hsu, William Chang,  Pan Xu <br />
-Proceedings of Annual AAAI Conference on Artificial Intelligence (AAAI 2024). <b>[Oral Presentation 2.3%]</b>  [<a href="https://arxiv.org/abs/2312.15549">Paper</a>]  </p>
-</li>
-</ul>
- <ul>
-<li><p>Thompson Sampling with Less Exploration is Fast and Optimal</a><br />
-<b>Tianyuan Jin</b>, Xianglin Yang, Xiaokui Xiao,  Pan Xu <br />
-Proceedings of the International Conference on Machine Learning (ICML 2023).  [<a href="https://openreview.net/forum?id=LxX6l3I6iN">Paper</a>] </p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://openreview.net/forum?id=An5MaWw4L4I">Finite-Time Regret of Thompson Sampling Algorithms for Exponential Family Multi-Armed Bandits</a><br />
-<b>Tianyuan Jin</b>, Pan Xu, Xiaokui Xiao, Anima Anandkumar <br />
-Proceedings of the Advances in Neural Information Processing Systems (NeurIPS 2022).  [<a href="https://openreview.net/forum?id=An5MaWw4L4I">arXiv</a>] </p>
-</li>
-</ul>  
-<ul>
-<li><p><a href="http://proceedings.mlr.press/v134/jin21a/jin21a.pdf">Double Explore-then-Commit: Asymptotic Optimality and Beyond</a><br />
-<b>Tianyuan Jin</b>, Pan Xu, Xiaokui Xiao, Quanquan Gu <br />
-Proceedings of the Annual Conference on Learning Theory (COLT 2021). [<a href="https://arxiv.org/abs/2002.09174">arXiv</a>] </p>
-</li>
-</ul>
-<ul>
-<li><p><a href="http://proceedings.mlr.press/v139/jin21d.html">MOTS: Minimax Optimal Thompson Sampling</a><br />
-<b>Tianyuan Jin</b>, Pan Xu, Jieming Shi, Xiaokui Xiao, Quanquan Gu <br />
-Proceedings of the International Conference on Machine Learning  (ICML 2021). [<a href="https://arxiv.org/abs/2003.01803">arXiv</a>]</p>
-</li>
-</ul>
-  </ul>
-<ul> 
-<li><p><a href="http://proceedings.mlr.press/v139/jin21a.html">Optimal Streaming Algorithms for Multi-Armed Bandits</a><br />
-<b>Tianyuan Jin</b>, Keke Huang, Jing Tang, Xiaokui Xiao<br />
-Proceedings of the International Conference on Machine Learning  (ICML 2021).</p>
-</li>
-</ul>
-  <ul>
-<li><p><a href="http://proceedings.mlr.press/v139/jin21c.html">Almost Optimal Anytime Algorithm for Batched Multi-Armed Bandits</a><br />
-<b>Tianyuan Jin</b>, Jing Tang, Pan Xu, Keke Huang, Xiaokui Xiao, Quanquan Gu<br />
-Proceedings of the International Conference on Machine Learning  (ICML 2021).</p>
-</li>
-</ul>
-   <ul>
-<li><p><a href="http://vldb.org/pvldb/vol14/p1756-jin.pdf">Unconstrained Submodular Maximization with Modular Costs: Tight Approximation and Application to Profit Maximization</a><br />
-<b>Tianyuan Jin</b>, Yu Yang, Renchi Yang, Jieming Shi, Keke Huang, Xiaokui Xiao<br />
-Proceedings of the VLDB Endowment (PVLDB 2021). <br />
-  This work has been presented at the <a href="https://sites.google.com/view/icml-2021-subsetml/home">ICML 2021 Subset Selection in Machine Learning: From Theory to Practice Workshop.</a></p>
-</li>
-</ul>
-     <ul>
-<li><p><a href="http://www.vldb.org/pvldb/vol13/p966-shi.pdf">Realtime Index-Free Single Source SimRank Processing on Web-Scale Graphs</a><br />
-  Jieming Shi*,  <b>Tianyuan Jin*</b>, Renchi Yang, Xiaokui Xiao, Yin Yang<br />
-Proceedings of the VLDB Endowment (PVLDB 2020)).</p>
-</li>
-</ul>
-    <ul>
-<li><p><a href="https://papers.nips.cc/paper/2019/file/0d441de75945e5acbc865406fc9a2559-Paper.pdf">Efficient Pure Exploration in Adaptive Round model</a><br />
-    <b>Tianyuan Jin</b>, Jieming Shi,  Xiaokui Xiao, Enhong Chen<br />
-Proceedings of the Advances in Neural Information Processing Systems (NeurIPS 2019).</p>
-</li>
-</ul>
-<h2>Research Interests</h2>
-<ul>
-<li><p>Online Learning and Bandits</p>
-</li>
-<li><p>Submodularity</p>
-</li>
-</ul>
-  <h2>Award</h2>
-  <ul>
-<li><p>Google PhD Fellowship, 2021</p>
-  </li>
-<li><p>  Research Achievement Award, School of Computing, National University of Singapore, 2021, 2023</p>
-  </li>
-  </ul>
-   <a href="https://clustrmaps.com/site/1bisk" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=l3xyOiZu_DFZx6O4_qLyIOkChOJ_HNOmBttNduYnA10&cl=ffffff"></a>
-  <ul>
- </td>
-</tr>
-</table>
+    <section id="home">
+      <img class="headshot" src="tianyuan_photo.jpg" alt="Tianyuan Jin">
+
+      <h1>Tianyuan Jin</h1>
+      <p class="position">
+        Research Fellow<br>
+        <a href="https://cde.nus.edu.sg/ece/">Department of Electrical and Computer Engineering</a><br>
+        <a href="https://www.nus.edu.sg/">National University of Singapore</a>
+      </p>
+
+      <p>
+        I am a Research Fellow at the Department of Electrical and Computer Engineering,
+        National University of Singapore, working with
+        <a href="https://www.comp.nus.edu.sg/~scarlett/">Prof. Jonathan Scarlett</a> and
+        <a href="https://vyftan.github.io/">Prof. Vincent Y. F. Tan</a>.
+        I obtained my Ph.D. in Computer Science from the National University of Singapore in 2024,
+        advised by <a href="https://www.comp.nus.edu.sg/~xiaoxk/">Prof. Xiaokui Xiao</a>.
+        Before that, I received my M.S. in Computer Science and B.S. in Mathematics from the
+        <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>.
+      </p>
+
+      <p>
+        My research interests include bandit algorithms, reinforcement learning, online learning,
+        and submodular optimization.
+      </p>
+
+      <p class="quicklinks">
+        [<a href="Tianyuan_Jin_CV.pdf">CV</a>]
+        [<a href="https://scholar.google.com/citations?user=3e5kmjsAAAAJ">Google Scholar</a>]
+        [<a href="mailto:tianyuan@nus.edu.sg">Email</a>]
+      </p>
+    </section>
+
+    <section id="contact" class="clear">
+      <h2>Contact</h2>
+      <p>Email: tianyuan [at] nus [dot] edu [dot] sg</p>
+    </section>
+
+    <section id="recent">
+      <h2>Recent papers</h2>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2409.18909">Best Arm Identification with Minimal Regret</a>
+          <span class="authors">with Junwen Yang and Vincent Y. F. Tan.</span>
+          <span class="venue">Preprint, 2024.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://openreview.net/forum?id=IkPJocP3ju">Breaking the Total Variance Barrier: Sharp Sample Complexity for Linear Heteroscedastic Bandits with Fixed Action Set</a>
+          <span class="authors">with Heyang Zhao, Weixin Wang, Vincent Y. F. Tan, Pan Xu, and Quanquan Gu.</span>
+          <span class="venue">ICLR 2026. <span class="tag">(* equal contribution)</span></span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://openreview.net/forum?id=buxFBI6GG4">Breaking the log(1/Delta_2) Barrier: Better Batched Best Arm Identification with Adaptive Grids</a>
+          <span class="authors">with Qin Zhang and Dongruo Zhou.</span>
+          <span class="venue">ICLR 2025. <span class="tag">(+ alphabetical author order)</span></span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2310.14129">Optimal Batched Best Arm Identification</a>
+          <span class="authors">with Yu Yang, Jing Tang, Xiaokui Xiao, and Pan Xu.</span>
+          <span class="venue">NeurIPS 2024.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2406.01192">Sparsity-Agnostic Linear Bandits with Adaptive Adversaries</a>
+          <span class="authors">with Kyoungseok Jang and Nicol&ograve; Cesa-Bianchi.</span>
+          <span class="venue">NeurIPS 2024.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2312.15549">Finite-Time Frequentist Regret Bounds of Multi-Agent Thompson Sampling on Sparse Hypergraphs</a>
+          <span class="authors">with Hao-Lun Hsu, William Chang, and Pan Xu.</span>
+          <span class="venue">AAAI 2024. Oral presentation.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="note small">* denotes equal contribution. + denotes alphabetical author order.</p>
+
+      <h3>2026</h3>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://openreview.net/forum?id=IkPJocP3ju">Breaking the Total Variance Barrier: Sharp Sample Complexity for Linear Heteroscedastic Bandits with Fixed Action Set</a>
+          <span class="authors">Heyang Zhao*, <strong>Tianyuan Jin*</strong>, Weixin Wang, Vincent Y. F. Tan, Pan Xu, Quanquan Gu.</span>
+          <span class="venue">International Conference on Learning Representations (ICLR), 2026.</span>
+        </li>
+      </ul>
+
+      <h3>2025</h3>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://openreview.net/forum?id=buxFBI6GG4">Breaking the log(1/Delta_2) Barrier: Better Batched Best Arm Identification with Adaptive Grids</a>
+          <span class="authors"><strong>Tianyuan Jin+</strong>, Qin Zhang+, Dongruo Zhou+.</span>
+          <span class="venue">International Conference on Learning Representations (ICLR), 2025.</span>
+        </li>
+      </ul>
+
+      <h3>2024</h3>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2409.18909">Best Arm Identification with Minimal Regret</a>
+          <span class="authors">Junwen Yang, Vincent Y. F. Tan, <strong>Tianyuan Jin</strong>.</span>
+          <span class="venue">Preprint, 2024.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2310.14129">Optimal Batched Best Arm Identification</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Yu Yang, Jing Tang, Xiaokui Xiao, Pan Xu.</span>
+          <span class="venue">Advances in Neural Information Processing Systems (NeurIPS), 2024.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2406.01192">Sparsity-Agnostic Linear Bandits with Adaptive Adversaries</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Kyoungseok Jang, Nicol&ograve; Cesa-Bianchi.</span>
+          <span class="venue">Advances in Neural Information Processing Systems (NeurIPS), 2024.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2312.15549">Finite-Time Frequentist Regret Bounds of Multi-Agent Thompson Sampling on Sparse Hypergraphs</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Hao-Lun Hsu, William Chang, Pan Xu.</span>
+          <span class="venue">AAAI Conference on Artificial Intelligence (AAAI), 2024. Oral presentation.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2406.04137">Optimal Batched Linear Bandits</a>
+          <span class="authors">Xuanfei Ren, <strong>Tianyuan Jin</strong>, Pan Xu.</span>
+          <span class="venue">International Conference on Machine Learning (ICML), 2024.</span>
+        </li>
+      </ul>
+
+      <h3>2023</h3>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://openreview.net/forum?id=LxX6l3I6iN">Thompson Sampling with Less Exploration is Fast and Optimal</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Xianglin Yang, Xiaokui Xiao, Pan Xu.</span>
+          <span class="venue">International Conference on Machine Learning (ICML), 2023.</span>
+        </li>
+      </ul>
+
+      <h3>2022</h3>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://openreview.net/forum?id=An5MaWw4L4I">Finite-Time Regret of Thompson Sampling Algorithms for Exponential Family Multi-Armed Bandits</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Pan Xu, Xiaokui Xiao, Anima Anandkumar.</span>
+          <span class="venue">Advances in Neural Information Processing Systems (NeurIPS), 2022.</span>
+        </li>
+      </ul>
+
+      <h3>2021</h3>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://proceedings.mlr.press/v139/jin21d.html">MOTS: Minimax Optimal Thompson Sampling</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Pan Xu, Jieming Shi, Xiaokui Xiao, Quanquan Gu.</span>
+          <span class="venue">International Conference on Machine Learning (ICML), 2021.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://proceedings.mlr.press/v139/jin21a.html">Optimal Streaming Algorithms for Multi-Armed Bandits</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Keke Huang, Jing Tang, Xiaokui Xiao.</span>
+          <span class="venue">International Conference on Machine Learning (ICML), 2021.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://proceedings.mlr.press/v139/jin21c.html">Almost Optimal Anytime Algorithm for Batched Multi-Armed Bandits</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Jing Tang, Pan Xu, Keke Huang, Xiaokui Xiao, Quanquan Gu.</span>
+          <span class="venue">International Conference on Machine Learning (ICML), 2021.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://proceedings.mlr.press/v134/jin21a.html">Double Explore-then-Commit: Asymptotic Optimality and Beyond</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Pan Xu, Xiaokui Xiao, Quanquan Gu.</span>
+          <span class="venue">Conference on Learning Theory (COLT), 2021.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://www.vldb.org/pvldb/vol14/p1756-jin.pdf">Unconstrained Submodular Maximization with Modular Costs: Tight Approximation and Application to Profit Maximization</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Yu Yang, Renchi Yang, Jieming Shi, Keke Huang, Xiaokui Xiao.</span>
+          <span class="venue">Proceedings of the VLDB Endowment (PVLDB), 2021.</span>
+        </li>
+      </ul>
+
+      <h3>2020 and earlier</h3>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://www.vldb.org/pvldb/vol13/p966-shi.pdf">Realtime Index-Free Single Source SimRank Processing on Web-Scale Graphs</a>
+          <span class="authors">Jieming Shi*, <strong>Tianyuan Jin*</strong>, Renchi Yang, Xiaokui Xiao, Yin Yang.</span>
+          <span class="venue">Proceedings of the VLDB Endowment (PVLDB), 2020.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://vldb.org/pvldb/vol13/p15-shi.pdf">Realtime Top-k Personalized PageRank over Large Graphs on GPUs</a>
+          <span class="authors">Jieming Shi, Renchi Yang, <strong>Tianyuan Jin</strong>, Xiaokui Xiao, Yin Yang.</span>
+          <span class="venue">Proceedings of the VLDB Endowment (PVLDB), 2020.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://proceedings.neurips.cc/paper/2019/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html">Efficient Pure Exploration in Adaptive Round Model</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Jieming Shi, Xiaokui Xiao, Enhong Chen.</span>
+          <span class="venue">Advances in Neural Information Processing Systems (NeurIPS), 2019.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://dl.acm.org/doi/10.1145/3357384.3357959">Tracking Top-k Influential Users with Relative Errors</a>
+          <span class="authors">Yu Yang, Zhefeng Wang, <strong>Tianyuan Jin</strong>, Jian Pei, Enhong Chen.</span>
+          <span class="venue">ACM International Conference on Information and Knowledge Management (CIKM), 2019.</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://epubs.siam.org/doi/10.1137/1.9781611975321.78">Maximizing the Effect of Information Adoption: A General Framework</a>
+          <span class="authors"><strong>Tianyuan Jin</strong>, Tong Xu, Hui Zhong, Enhong Chen, Zhefeng Wang, Qi Liu.</span>
+          <span class="venue">SIAM International Conference on Data Mining (SDM), 2018.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul>
+        <li>Dean's Graduate Research Excellence Award, 2024.</li>
+        <li>NUS School of Computing Research Achievement Award, 2021, 2023, and 2024.</li>
+        <li>Google PhD Fellowship, 2021.</li>
+        <li>AISG PhD Fellowship, 2021.</li>
+      </ul>
+    </section>
+
+    <section id="service">
+      <h2>Professional service</h2>
+      <p>
+        Conference reviewer for COLT, ICML, NeurIPS, ICLR, AISTATS, AAAI, KDD, and SODA.
+        Journal reviewer for Artificial Intelligence, JMLR, and IEEE Transactions on Information Theory.
+      </p>
+    </section>
+
+    <footer>
+      Last updated: May 2026. This page is intentionally lightweight and uses only one HTML file.
+    </footer>
+  </main>
 </body>
 </html>
-
